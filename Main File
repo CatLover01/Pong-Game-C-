@@ -64,16 +64,18 @@ sf::Text playerTextF(sf::Font& font, sf::RenderWindow& window) {
     constexpr int spaceY{ 25 };
 
     sf::Text playerText("0", font, fontHalfSize * 2);
+    playerText.setOrigin(playerText.getLocalBounds().width / 2, playerText.getLocalBounds().height / 2);
     playerText.setPosition(window.getSize().x / 2 + spaceBetweenBar, spaceY);
     return playerText;
 }
 
-sf::Text aiTextF(sf::Font& font, sf::RenderWindow& window, sf::Text playerText) {
+sf::Text aiTextF(sf::Font& font, sf::RenderWindow& window) {
     constexpr int spaceBetweenBar{ 60 };
     constexpr int fontHalfSize{ 40 };
     constexpr int spaceY{ 25 };
    
     sf::Text aiText("0", font, fontHalfSize * 2);
+    aiText.setOrigin(aiText.getLocalBounds().width/2, aiText.getLocalBounds().height / 2);
     aiText.setPosition(window.getSize().x / 2 - spaceBetweenBar, spaceY);
     return aiText;
 }
@@ -82,7 +84,7 @@ sf::Text endingTextF(sf::Font& font, sf::RenderWindow& window) {
     constexpr int textSize{ 100 };
 
     sf::Text endingText("You won!!!", font, textSize);
-    endingText.setOrigin(textSize/2, textSize/2);
+    endingText.setOrigin(textSize/2, textSize/3);
     endingText.setPosition(window.getSize().x / 2, window.getSize().y / 2);
     endingText.setFillColor(sf::Color::White);
     return endingText;
@@ -156,7 +158,7 @@ int main()
     
     sf::Font font{defaultFont()};
     sf::Text playerText{playerTextF(font, window)};
-    sf::Text aiText{aiTextF(font, window, playerText)};
+    sf::Text aiText{aiTextF(font, window)};
     sf::Text endingText{endingTextF(font, window)};
     
     while (window.isOpen())
