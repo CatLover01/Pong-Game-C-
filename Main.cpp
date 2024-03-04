@@ -1,8 +1,6 @@
 #include "SFML/Graphics.hpp"
 #include <iostream>
 #include <algorithm>
-#include <thread>
-#include <chrono>
 
 void windowInitialization(sf::RenderWindow& window) {
     sf::ContextSettings settings;
@@ -82,15 +80,21 @@ sf::Text aiTextF(sf::Font& font, sf::RenderWindow& window) {
 
 sf::Text endingTextF(sf::Font& font, sf::RenderWindow& window) {
     constexpr int textSize{ 100 };
+    constexpr int distanceFromTop{ 100 };
 
     sf::Text endingText("You won!!!", font, textSize);
-    endingText.setOrigin(textSize/2, textSize/3);
-    endingText.setPosition(window.getSize().x / 2, window.getSize().y / 2);
+    endingText.setOrigin(endingText.getLocalBounds().width/2, endingText.getLocalBounds().height / 2);
+    endingText.setPosition(window.getSize().x / 2, distanceFromTop);
     endingText.setFillColor(sf::Color::White);
     return endingText;
 }
 
-bool checkCollisionSides(sf::RenderWindow& window, sf::CircleShape& shapeBall, sf::Text& endingText, sf::Text& aiText, sf::Text& playerText, int& tempAiPoints, int& tempPlayerPoints, const int timeBeforeExiting) {
+bool checkCollisionSides(sf::RenderWindow& window, sf::CircleShape& shapeBall, sf::Text& endingText, sf::Text& aiText, sf::Text& playerText, int& tempAiPoints, int& tempPlayerPoints) {
+   
+    constexpr int distanceFromTop{ 100 };
+    const int middleDistance{ static_cast<int>(window.getSize().y / 2)};
+    const int topDistance{ static_cast<int>(window.getSize().y - distanceFromTop) };
+    
     if (shapeBall.getPosition().x > window.getSize().x - shapeBall.getRadius()) {
         shapeBall.setPosition(window.getSize().x / 2, window.getSize().y / 2);
         tempAiPoints++;
@@ -99,10 +103,9 @@ bool checkCollisionSides(sf::RenderWindow& window, sf::CircleShape& shapeBall, s
             window.clear();
             endingText.setString("You lost idiot!");
             endingText.setOrigin(endingText.getLocalBounds().width / 2, endingText.getLocalBounds().height / 2);
-            endingText.setPosition(window.getSize().x / 2, window.getSize().y / 2);
+            endingText.setPosition(window.getSize().x / 2, distanceFromTop);
             window.draw(endingText);
             window.display();
-            std::this_thread::sleep_for(std::chrono::seconds(timeBeforeExiting));
             return true;
         }
     }
@@ -114,7 +117,6 @@ bool checkCollisionSides(sf::RenderWindow& window, sf::CircleShape& shapeBall, s
             window.clear();
             window.draw(endingText);
             window.display();
-            std::this_thread::sleep_for(std::chrono::seconds(timeBeforeExiting));
             return true;
         }
     }
@@ -136,11 +138,27 @@ void collisionBarCheck(sf::CircleShape& shapeBall, sf::RectangleShape& playerSha
     }
 }
 
+sf::RectangleShape createButton(int heightY, sf::RenderWindow& window) {
+    sf::RectangleShape button{ sf::Vector2f(window.getSize().x / 2, 100) };
+    button.setOrigin(button.getGlobalBounds().width / 2, button.getGlobalBounds().height / 2);
+    button.setPosition(window.getSize().x / 2, heightY);
+    button.setFillColor(sf::Color::White);
+    return button;
+}
+sf::Text createTextButton(std::string name, int heightY, sf::RenderWindow& window, sf::Font& font) {
+    constexpr int textAdjustment{ 10 };
+    sf::Text text{ name, font, 50 };
+    text.setFillColor(sf::Color::Black);
+    text.setOrigin(text.getLocalBounds().width / 2, text.getLocalBounds().height / 2);
+    text.setPosition(window.getSize().x / 2, heightY - textAdjustment);
+
+    return text;
+}
+
 int main()
 {
     //var declaration
     constexpr int numberSideX{ 50 };
-    constexpr int timeBeforeExiting{ 4 };
     float xStep{ 4.98f };
     float yStep{ 4.98f };
     int tempPlayerPoints{ 0 };
@@ -178,7 +196,7 @@ int main()
         }
 
         //collision check    side + top
-        bool check{ checkCollisionSides(window, shapeBall, endingText, aiText, playerText, tempAiPoints, tempPlayerPoints, timeBeforeExiting) };
+        bool check{ checkCollisionSides(window, shapeBall, endingText, aiText, playerText, tempAiPoints, tempPlayerPoints) };
         
         if (shapeBall.getPosition().y > window.getSize().y - shapeBall.getRadius()) {
             yStep *= -1;
@@ -187,7 +205,52 @@ int main()
             yStep *= -1;
         }
         if (check) {
-            break;
+            bool bCheck{ true };
+
+            //setting 2 buttons and 3 texts
+            constexpr int distanceFromTop{ 100 };
+            const int middleDistance{ static_cast<int>(window.getSize().y / 2) };
+            const int topDistance{ static_cast<int>(window.getSize().y - distanceFromTop) };
+            sf::RectangleShape restartButton{ createButton(middleDistance, window)};
+            sf::RectangleShape quitButton{ createButton(topDistance, window)};
+            sf::Text quitText{ createTextButton("Quit", topDistance, window, font) };
+            sf::Text restartText{ createTextButton("Restart", middleDistance, window, font) };
+
+            window.clear();
+            window.draw(endingText);
+            window.draw(restartButton);
+            window.draw(quitButton);
+            window.draw(quitText);
+            window.draw(restartText);
+            window.display();
+
+            while (bCheck) {
+                bool bInnerCheck{ false };
+                sf::Event event;
+                while (window.pollEvent(event)) {
+                    if (event.type == sf::Event::MouseButtonPressed) {
+                        sf::Vector2i mousePosition = sf::Mouse::getPosition(window);
+                        if (mousePosition.x > restartButton.getPosition().x - restartButton.getSize().x / 2 && mousePosition.x < restartButton.getPosition().x + restartButton.getSize().x / 2 &&
+                            mousePosition.y > restartButton.getPosition().y - restartButton.getSize().y / 2 && mousePosition.y < restartButton.getPosition().y + restartButton.getSize().y / 2) {
+                            tempPlayerPoints = 0;
+                            tempAiPoints = 0;
+                            playerText.setString("0");
+                            aiText.setString("0");
+                            bInnerCheck = true;
+                            break;
+                        }
+                        else if (mousePosition.x > quitButton.getPosition().x - quitButton.getSize().x / 2 && mousePosition.x < quitButton.getPosition().x + quitButton.getSize().x / 2 &&
+                            mousePosition.y > quitButton.getPosition().y - quitButton.getSize().y / 2 && mousePosition.y < quitButton.getPosition().y + quitButton.getSize().y / 2) {
+                            return 0;
+                        }
+                    }
+                }
+                if (bInnerCheck) {
+                    break;
+                }
+                
+            }
+            continue;
         }
 
         collisionBarCheck(shapeBall, playerShape, aiShape, xStep);
