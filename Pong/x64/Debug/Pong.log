@@ -1,0 +1,113 @@
+﻿  Main.cpp
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(22,77): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(22,77): warning C4244:         with
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(22,77): warning C4244:         [
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(22,77): warning C4244:             T=unsigned int
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(22,77): warning C4244:         ]
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(22,43): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(22,43): warning C4244:         with
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(22,43): warning C4244:         [
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(22,43): warning C4244:             T=unsigned int
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(22,43): warning C4244:         ]
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(27,56): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(27,56): warning C4244:         with
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(27,56): warning C4244:         [
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(27,56): warning C4244:             T=unsigned int
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(27,56): warning C4244:         ]
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(27,24): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(35,78): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(35,78): warning C4244:         with
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(35,78): warning C4244:         [
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(35,78): warning C4244:             T=unsigned int
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(35,78): warning C4244:         ]
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(35,78): warning C4244:         and
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(35,78): warning C4244:         [
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(35,78): warning C4244:             T=float
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(35,78): warning C4244:         ]
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(38,71): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(38,71): warning C4244:         with
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(38,71): warning C4244:         [
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(38,71): warning C4244:             T=unsigned int
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(38,71): warning C4244:         ]
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(38,47): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(38,47): warning C4244:         with
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(38,47): warning C4244:         [
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(38,47): warning C4244:             T=unsigned int
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(38,47): warning C4244:         ]
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(49,70): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(49,70): warning C4244:         with
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(49,70): warning C4244:         [
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(49,70): warning C4244:             T=unsigned int
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(49,70): warning C4244:         ]
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(49,46): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(49,46): warning C4244:         with
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(49,46): warning C4244:         [
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(49,46): warning C4244:             T=unsigned int
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(49,46): warning C4244:         ]
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(66,51): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(66,51): warning C4244:         with
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(66,51): warning C4244:         [
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(66,51): warning C4244:             T=unsigned int
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(66,51): warning C4244:         ]
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(77,47): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(77,47): warning C4244:         with
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(77,47): warning C4244:         [
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(77,47): warning C4244:             T=unsigned int
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(77,47): warning C4244:         ]
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(87,47): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(87,47): warning C4244:         with
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(87,47): warning C4244:         [
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(87,47): warning C4244:             T=unsigned int
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(87,47): warning C4244:         ]
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(99,74): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(99,74): warning C4244:         with
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(99,74): warning C4244:         [
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(99,74): warning C4244:             T=unsigned int
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(99,74): warning C4244:         ]
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(99,50): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(99,50): warning C4244:         with
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(99,50): warning C4244:         [
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(99,50): warning C4244:             T=unsigned int
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(99,50): warning C4244:         ]
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(106,55): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(106,55): warning C4244:         with
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(106,55): warning C4244:         [
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(106,55): warning C4244:             T=unsigned int
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(106,55): warning C4244:         ]
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(113,74): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(113,74): warning C4244:         with
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(113,74): warning C4244:         [
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(113,74): warning C4244:             T=unsigned int
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(113,74): warning C4244:         ]
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(113,50): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(113,50): warning C4244:         with
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(113,50): warning C4244:         [
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(113,50): warning C4244:             T=unsigned int
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(113,50): warning C4244:         ]
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(142,64): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(142,64): warning C4244:         with
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(142,64): warning C4244:         [
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(142,64): warning C4244:             T=unsigned int
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(142,64): warning C4244:         ]
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(142,64): warning C4244:         and
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(142,64): warning C4244:         [
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(142,64): warning C4244:             T=float
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(142,64): warning C4244:         ]
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(144,48): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(144,43): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(144,43): warning C4244:         with
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(144,43): warning C4244:         [
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(144,43): warning C4244:             T=unsigned int
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(144,43): warning C4244:         ]
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(153,54): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(153,41): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(153,41): warning C4244:         with
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(153,41): warning C4244:         [
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(153,41): warning C4244:             T=unsigned int
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(153,41): warning C4244:         ]
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(187,52): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(187,52): warning C4244:         with
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(187,52): warning C4244:         [
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(187,52): warning C4244:             T=unsigned int
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(187,52): warning C4244:         ]
+  Pong.vcxproj -> C:\Alex_Dev\VisualStudio2022 - C++\Pong\x64\Debug\Pong.exe
