@@ -1,0 +1,36 @@
+﻿  Main.cpp
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(30,24): error C2065: 'width': undeclared identifier
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(30,32): error C2065: 'numberSideX': undeclared identifier
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(30,64): error C2065: 'height': undeclared identifier
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(34,28): error C2065: 'numberSideX': undeclared identifier
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(34,60): error C2065: 'height': undeclared identifier
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(38,71): error C2065: 'height': undeclared identifier
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(41,47): error C2065: 'width': undeclared identifier
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(41,78): error C2065: 'height': undeclared identifier
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(50,46): error C2065: 'width': undeclared identifier
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(50,76): error C2065: 'height': undeclared identifier
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(62,28): error C2065: 'width': undeclared identifier
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(63,24): error C2065: 'width': undeclared identifier
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(68,47): error C2065: 'width': undeclared identifier
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(68,78): error C2065: 'height': undeclared identifier
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(83,74): error C2065: 'height': undeclared identifier
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(83,31): error C2672: 'std::clamp': no matching overloaded function found
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\algorithm(10453,33):
+  could be 'const _Ty &std::clamp(const _Ty &,const _Ty &,const _Ty &)'
+  	C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(83,31):
+  	'const _Ty &std::clamp(const _Ty &,const _Ty &,const _Ty &)': expects 3 arguments - 2 provided
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\algorithm(10425,33):
+  or       'const _Ty &std::clamp(const _Ty &,const _Ty &,const _Ty &,_Pr)'
+  	C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(83,31):
+  	'const _Ty &std::clamp(const _Ty &,const _Ty &,const _Ty &,_Pr)': expects 4 arguments - 2 provided
+  
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(86,28): error C2065: 'width': undeclared identifier
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(86,36): error C2065: 'numberSideX': undeclared identifier
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(100,41): error C2065: 'width': undeclared identifier
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(101,54): error C2065: 'width': undeclared identifier
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(101,85): error C2065: 'height': undeclared identifier
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(108,59): error C2065: 'width': undeclared identifier
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(108,90): error C2065: 'height': undeclared identifier
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(116,54): error C2065: 'width': undeclared identifier
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(116,85): error C2065: 'height': undeclared identifier
+C:\Alex_Dev\VisualStudio2022 - C++\Pong\Main.cpp(127,41): error C2065: 'height': undeclared identifier
