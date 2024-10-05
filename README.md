@@ -3,7 +3,7 @@ This is pong. I don't need to explain it...
 
 How to make it work?
   - Download all files
-  - Open + build the solution (SFML should be included, Raldryniorth said that )
+  - Open + build the solution
   - Run the program
 
 More information
